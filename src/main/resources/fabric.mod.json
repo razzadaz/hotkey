@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "hotkey-v1-alpha",
+	"version": "v1-alpha",
+	"name": "Hotkey",
+	"description": "Adds keybinds that let you scroll your hotbar. Nobody likes using the scroll wheel.",
+	"authors": [
+		"Razzadaz"
+	],
+	"icon": "assets/hotkey-v1-alpha/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"razz.hotkey.HotkeyV1AlphaClient"
+		],
+		"fabric-datagen": [
+			"razz.hotkey.HotkeyV1AlphaDataGenerator"
+		]
+	},
+	"mixins": [
+		"hotkey-v1-alpha.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
